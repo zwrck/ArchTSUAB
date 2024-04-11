@@ -13,7 +13,7 @@ Arch Installation Part Two
 Setting up locales
 "
 
-echo -n "Enter your Region and City"
+echo "Enter your Region and City"
 read region city
 ln -sf /usr/share/zoneinfo/$region/$city /etc/localtime
 hwclock --systohc
