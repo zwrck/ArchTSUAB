@@ -1,6 +1,6 @@
 # ArchTSUAB
 
-pacman -Syy
+pacman -Sy
 
 pacman -S git
 
