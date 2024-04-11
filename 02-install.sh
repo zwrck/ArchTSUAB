@@ -61,6 +61,8 @@ elif grep -E "AuthenticAMD" <<< ${proc_type}; then
     pacman -S --noconfirm --needed amd-ucode
 fi
 
+sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+
 # Systemd-boot
 echo "Setting up Systemd-boot"
 
