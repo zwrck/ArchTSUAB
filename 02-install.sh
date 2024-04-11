@@ -75,8 +75,5 @@ pacman -S --noconfirm --needed networkmanager git
 systemctl enable NetworkManager
 
 # Rebooting
-echo "Rebooting in 3 Seconds ..." && sleep 1
-echo "Rebooting in 2 Seconds ..." && sleep 1
-echo "Rebooting in 1 Second ..." && sleep 1
-
-umount -R /mnt
+echo "Rebooting...";
+exit
