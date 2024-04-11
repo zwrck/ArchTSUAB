@@ -77,5 +77,4 @@ pacman -S --noconfirm --needed networkmanager git
 systemctl enable NetworkManager
 
 # Rebooting
-echo "Rebooting...";
-exit
+echo "Enter ctrl+d"
