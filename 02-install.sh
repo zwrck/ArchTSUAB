@@ -66,7 +66,7 @@ bootctl install
 
 truncate --size=0 /boot/loader/loader.conf
 echo -e "default\t\tarch.conf\ntimeout\t\t0\nconsole-mode\tmax\neditor\t\tno" >> /boot/loader/loader.conf
-echo -e "title\tLinux\nlinux\t/vmlinuz-linux\ninitrd\t/initramfs-linux.img\noptions\troot=dev/sda2 rw quiet" >> /boot/loader/entries/arch.conf
+echo -e "title\tLinux\nlinux\t/vmlinuz-linux\ninitrd\t/initramfs-linux.img\noptions\troot=/dev/sda2 rw quiet" >> /boot/loader/entries/arch.conf
 
 # Networking
 echo "Installing NetworkManager"
