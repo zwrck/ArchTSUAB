@@ -57,3 +57,5 @@ cp -R ArchTSUAB /mnt/home/
 echo -e "Proceed with Part Two\ncd /home/ArchTSUAB\n./02-install.sh"
 
 arch-chroot /mnt
+
+reboot
