@@ -1,7 +1,5 @@
 #!/bin/bash
 
-chmod +x ArchTSUAB/01-install.sh ArchTSUAB/02-install.sh
-
 echo -ne "
 ████████╗███████╗██╗   ██╗ █████╗ ██████╗
 ╚══██╔══╝██╔════╝██║   ██║██╔══██╗██╔══██╗
@@ -54,6 +52,7 @@ echo "Generating fstab"
 genfstab -U /mnt >> /mnt/etc/fstab
 cat /mnt/etc/fstab
 
+cd
 cp -R ArchTSUAB /mnt/home/
 
 echo -e "Proceed with Part Two\ncd /home/ArchTSUAB\n./02-install.sh"
