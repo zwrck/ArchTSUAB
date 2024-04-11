@@ -1,4 +1,5 @@
 # ArchTSUAB
+
 pacman -Syy
 pacman -S git
 git clone https://github.com/zwrck/ArchTSUAB
