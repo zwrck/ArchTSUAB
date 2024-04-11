@@ -9,14 +9,13 @@ echo -ne "
    ╚═╝   ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝
 ------------------------------------------
 Arch Installation Part One
-
-Setting up mirrors
 "
 
 timedatectl set-ntp 1
 
 iso=$(curl -4 ifconfig.co/country-iso)
 sed -i 's/^#ParallelDownloads/ParallelDownloads/' /etc/pacman.conf
+echo "Setting up mirrors..."
 reflector -a 48 -c $iso -f 5 -l 20 --sort rate --save /etc/pacman.d/mirrorlist
 
 # Table and Partitioning
