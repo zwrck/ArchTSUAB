@@ -10,7 +10,7 @@ echo -ne "
 ------------------------------------------
 Arch Installation Part Two
 
-Setting up locales
+Setting up locales...
 "
 
 echo "Enter your Region and City"
@@ -28,17 +28,17 @@ echo LANG=ru_RU.UTF-8 >> /etc/locale.conf
 
 # Setting hostname & username
 
-echo -n "Create hostname:"
+echo -n "Create hostname: ";
 read input
 echo $input >> /etc/hostname
 echo -n "hostname: "; cat /etc/hostname
-echo -n "Create root password: "
+echo -n "Create root password: ";
 passwd
-echo -n "Create username:"
+echo -n "Create username:";
 read input
 useradd -m -G wheel $input
 echo -ne "username: $input\n";
-echo "Create $input password:"
+echo "Create $input password:";
 passwd $input
 
 # Sudoers
