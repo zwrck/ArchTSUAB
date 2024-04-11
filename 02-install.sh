@@ -32,9 +32,9 @@ echo -n "Create hostname: ";
 read input
 echo $input >> /etc/hostname
 echo -n "hostname: "; cat /etc/hostname
-echo -n "Create root password: ";
+echo "Create root password: ";
 passwd
-echo -n "Create username:";
+echo -n "Create username: ";
 read input
 useradd -m -G wheel $input
 echo -ne "username: $input\n";
